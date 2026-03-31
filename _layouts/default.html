@@ -62,22 +62,35 @@
       margin: 8px 0;
     }
 
-    ul {
-      padding-left: 18px;
-      margin: 8px 0;
-    }
-
-    li {
-      margin: 4px 0;
-    }
-
     a {
-      color: #2563eb;
+      color: #555; /* neutral grey */
       text-decoration: none;
     }
-
+    
+    a:visited {
+      color: #d9822b; /* your warm inverted tone */
+    }
+    
     a:hover {
       text-decoration: underline;
+    }
+    
+    ul {
+      list-style: none;
+      padding-left: 18px;
+    }
+    
+    ul li {
+      position: relative;
+      margin: 4px 0;
+    }
+    
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: -14px;
+      color: #0b5394; /* matches your headings */
+      font-weight: 600;
     }
   </style>
 </head>
